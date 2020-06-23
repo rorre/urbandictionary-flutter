@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'mainWindow/mainWindow.dart';
-import 'searchResult/searchResult.dart';
+import 'definitionWindow/definitionWindow.dart';
+import 'searchWindow/searchWindow.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => MainWindow(),
-        '/search': (context) => SearchResult()
+        '/definition': (context) => DefinitionWindow(),
+        '/search': (context) => SearchWindow(),
       },
     );
   }
